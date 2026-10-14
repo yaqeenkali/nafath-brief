@@ -36,5 +36,7 @@ A Software Bill of Materials (SBOM) is a formal record of software components an
 Resource: The Minimum Elements for a Software Bill of Materials (SBOM) - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 
 ## Misconception in My Track
+A common misconception is that all applications using Log4j are vulnerable to CVE-2021-44228. However, Apache clarifies that this vulnerability affects the log4j-core component; applications using only log4j-api, without log4j-core, are not affected by this specific vulnerability. Organisations should examine their actual dependencies, identify affected versions, and apply appropriate security updates. Under the CVE-2021-44228 section, Apache’s Security page states: “Note that only the log4j-core JAR file is impacted by this vulnerability.” This demonstrates why accurate software component inventories are important for identifying risks and prioritising remediation.
 
 ## Open Question
+How can organizations continuously identify vulnerable software dependencies and verify that security updates are applied throughout their software supply chains?

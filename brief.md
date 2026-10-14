@@ -21,10 +21,19 @@ The OWASP Mobile Application Security Verification Standard &#40;MASVS&#41; defi
 Resource: OWASP Mobile Application Security Verification Standard &#40;MASVS&#41; \- https://mas\.owasp\.org/MASVS/
 
 ## Networking
+The Border Gateway Protocol &#40;BGP&#41; allows networks to announce IP address prefixes they can route to\. Incorrect or malicious announcements can redirect traffic or make destinations unreachable\. Resource Public Key Infrastructure &#40;RPKI&#41; supports route origin validation by allowing network operators to check whether an autonomous system is authorized to announce a particular prefix\. Although this provides an additional layer of security against certain routing risks, it does not validate the entire network path or prevent all routing attacks\. Therefore, operators must also implement appropriate routing policies\.
+
+Resource: RFC 6811: BGP Prefix Origin Validation \- https://www\.rfc\-editor\.org/rfc/rfc6811\.html
 
 ## Cybersecurity
+Log4Shell &#40;CVE\-2021\-44228&#41; is a critical remote code execution vulnerability affecting the `log4j-core` component of Apache Log4j 2\. Under vulnerable conditions, attacker\-controlled log messages can trigger unsafe Java Naming and Directory Interface &#40;JNDI&#41; lookups, potentially enabling remote code execution\. The vulnerability received a CVSS score of 10\.0, reflecting its critical severity\. Organisations should identify affected components, check their versions, and apply appropriate security updates\. Maintaining an accurate inventory of software dependencies helps teams identify potentially affected applications and prioritise investigation and remediation\.
 
+Resource: Security \- Apache Logging Services \- https://logging\.apache\.org/security\.html
+ 
 ## Data
+A Software Bill of Materials (SBOM) is a formal record of software components and their relationships. It helps organisations identify third-party libraries and assess potential vulnerabilities in their products. According to NTIA guidance, an SBOM should include the supplier name, component name, component version, other unique identifiers, component relationships, the SBOM author, and a timestamp. Machine-readable SBOMs can support automated analysis and improve vulnerability management. However, an SBOM provides an inventory of software components; it does not guarantee that the software is secure or free from vulnerabilities.
+
+Resource: The Minimum Elements for a Software Bill of Materials (SBOM) - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 
 ## Misconception in My Track
 

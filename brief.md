@@ -20,17 +20,17 @@ The OWASP Mobile Application Security Verification Standard &#40;MASVS&#41; defi
 Resource: OWASP Mobile Application Security Verification Standard &#40;MASVS&#41; \- https://mas\.owasp\.org/MASVS/
 
 ## Networking
-The Border Gateway Protocol &#40;BGP&#41; allows networks to announce IP address prefixes they can route to\. Incorrect or malicious announcements can redirect traffic or make destinations unreachable\. Resource Public Key Infrastructure &#40;RPKI&#41; supports route origin validation by allowing network operators to check whether an autonomous system is authorized to announce a particular prefix\. Although this provides an additional layer of security against certain routing risks, it does not validate the entire network path or prevent all routing attacks\. Therefore, operators must also implement appropriate routing policies\.
+The Border Gateway Protocol (BGP) allows networks to announce IP address prefixes they can route to. Incorrect or malicious announcements can redirect traffic or make destinations unreachable. Resource Public Key Infrastructure (RPKI) supports route origin validation by checking whether an autonomous system is authorized to announce a particular prefix. However, this does not validate the entire network path or prevent every routing attack. Operators must also apply appropriate routing policies.
 
-Resource: RFC 6811: BGP Prefix Origin Validation \- https://www\.rfc\-editor\.org/rfc/rfc6811\.html
+Resource: RFC 6811: BGP Prefix Origin Validation - https://www.rfc-editor.org/rfc/rfc6811.html
 
 ## Cybersecurity
-Log4Shell &#40;CVE\-2021\-44228&#41; is a critical remote code execution vulnerability affecting the `log4j-core` component of Apache Log4j 2\. Under vulnerable conditions, attacker\-controlled log messages can trigger unsafe Java Naming and Directory Interface &#40;JNDI&#41; lookups, potentially enabling remote code execution\. The vulnerability received a CVSS score of 10\.0, reflecting its critical severity\. Organisations should identify affected components, check their versions, and apply appropriate security updates\. Maintaining an accurate inventory of software dependencies helps teams identify potentially affected applications and prioritise investigation and remediation\.
+Log4Shell (CVE-2021-44228) is a critical remote code execution vulnerability affecting Apache Log4j 2’s log4j-core component. Under vulnerable conditions, attacker-controlled log messages can trigger unsafe Java Naming and Directory Interface (JNDI) lookups, potentially enabling remote code execution. The vulnerability received a CVSS score of 10.0. Organisations should identify affected components, check versions, and apply security updates. Accurate dependency inventories help teams identify affected applications and prioritise remediation.
 
-Resource: Security \- Apache Logging Services \- https://logging\.apache\.org/security\.html
- 
+Resource: Security - Apache Logging Services - https://logging.apache.org/security.html
+
 ## Data
-A Software Bill of Materials (SBOM) is a formal record of software components and their relationships. It helps organisations identify third-party libraries and assess potential vulnerabilities in their products. According to NTIA guidance, an SBOM should include the supplier name, component name, component version, other unique identifiers, component relationships, the SBOM author, and a timestamp. Machine-readable SBOMs can support automated analysis and improve vulnerability management. However, an SBOM provides an inventory of software components; it does not guarantee that the software is secure or free from vulnerabilities.
+A Software Bill of Materials (SBOM) is a formal record of software components and their relationships. It helps organisations identify third-party libraries and assess potential vulnerabilities. NTIA guidance lists key elements, including supplier, component name and version, other unique identifiers, component relationships, SBOM author, and timestamp. Machine-readable SBOMs support automated analysis and vulnerability management. However, an SBOM is an inventory, not a guarantee that software is secure or free from vulnerabilities.
 
 Resource: The Minimum Elements for a Software Bill of Materials (SBOM) - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 
